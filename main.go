@@ -139,7 +139,7 @@ func (db *DB) DeleteMovie(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	clientOptions := options.Client().ApplyURI("mongodb+srv://xbernikov:xavip14@xbcluster0-dfl0s.mongodb.net/test?retryWrites=true&w=majority")
+	clientOptions := options.Client().ApplyURI("")
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
 		panic(err)
